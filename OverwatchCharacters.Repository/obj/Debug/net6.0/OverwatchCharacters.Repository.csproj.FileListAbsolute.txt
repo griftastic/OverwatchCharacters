@@ -1,0 +1,12 @@
+/Users/griffinbrown/Desktop/ElevenFiftyAcademy129.nosync/C#Console/OverwatchCharacters/OverwatchCharacters.Repository/bin/Debug/net6.0/OverwatchCharacters.Repository.deps.json
+/Users/griffinbrown/Desktop/ElevenFiftyAcademy129.nosync/C#Console/OverwatchCharacters/OverwatchCharacters.Repository/bin/Debug/net6.0/OverwatchCharacters.Repository.dll
+/Users/griffinbrown/Desktop/ElevenFiftyAcademy129.nosync/C#Console/OverwatchCharacters/OverwatchCharacters.Repository/bin/Debug/net6.0/OverwatchCharacters.Repository.pdb
+/Users/griffinbrown/Desktop/ElevenFiftyAcademy129.nosync/C#Console/OverwatchCharacters/OverwatchCharacters.Repository/obj/Debug/net6.0/OverwatchCharacters.Repository.csproj.AssemblyReference.cache
+/Users/griffinbrown/Desktop/ElevenFiftyAcademy129.nosync/C#Console/OverwatchCharacters/OverwatchCharacters.Repository/obj/Debug/net6.0/OverwatchCharacters.Repository.GeneratedMSBuildEditorConfig.editorconfig
+/Users/griffinbrown/Desktop/ElevenFiftyAcademy129.nosync/C#Console/OverwatchCharacters/OverwatchCharacters.Repository/obj/Debug/net6.0/OverwatchCharacters.Repository.AssemblyInfoInputs.cache
+/Users/griffinbrown/Desktop/ElevenFiftyAcademy129.nosync/C#Console/OverwatchCharacters/OverwatchCharacters.Repository/obj/Debug/net6.0/OverwatchCharacters.Repository.AssemblyInfo.cs
+/Users/griffinbrown/Desktop/ElevenFiftyAcademy129.nosync/C#Console/OverwatchCharacters/OverwatchCharacters.Repository/obj/Debug/net6.0/OverwatchCharacters.Repository.csproj.CoreCompileInputs.cache
+/Users/griffinbrown/Desktop/ElevenFiftyAcademy129.nosync/C#Console/OverwatchCharacters/OverwatchCharacters.Repository/obj/Debug/net6.0/OverwatchCharacters.Repository.dll
+/Users/griffinbrown/Desktop/ElevenFiftyAcademy129.nosync/C#Console/OverwatchCharacters/OverwatchCharacters.Repository/obj/Debug/net6.0/refint/OverwatchCharacters.Repository.dll
+/Users/griffinbrown/Desktop/ElevenFiftyAcademy129.nosync/C#Console/OverwatchCharacters/OverwatchCharacters.Repository/obj/Debug/net6.0/OverwatchCharacters.Repository.pdb
+/Users/griffinbrown/Desktop/ElevenFiftyAcademy129.nosync/C#Console/OverwatchCharacters/OverwatchCharacters.Repository/obj/Debug/net6.0/ref/OverwatchCharacters.Repository.dll

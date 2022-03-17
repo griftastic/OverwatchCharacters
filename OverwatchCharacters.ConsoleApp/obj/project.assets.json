@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "OverwatchCharacters.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/OverwatchCharacters.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OverwatchCharacters.Repository.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "OverwatchCharacters.Repository/1.0.0": {
+      "type": "project",
+      "path": "../OverwatchCharacters.Repository/OverwatchCharacters.Repository.csproj",
+      "msbuildProject": "../OverwatchCharacters.Repository/OverwatchCharacters.Repository.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "OverwatchCharacters.Repository >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/Users/griffinbrown/.nuget/packages/": {}
@@ -31,7 +50,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/griffinbrown/Desktop/ElevenFiftyAcademy129.nosync/C#Console/OverwatchCharacters/OverwatchCharacters.Repository/OverwatchCharacters.Repository.csproj": {
+              "projectPath": "/Users/griffinbrown/Desktop/ElevenFiftyAcademy129.nosync/C#Console/OverwatchCharacters/OverwatchCharacters.Repository/OverwatchCharacters.Repository.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
