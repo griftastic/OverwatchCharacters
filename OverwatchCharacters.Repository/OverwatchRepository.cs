@@ -25,6 +25,19 @@ namespace OverwatchCharacters.Repository
             return _characterList;
         }
 
+        public Character GetCharacterFromListByName(string userInputCharacterSearch)
+        {
+            foreach (Character character in _characterList)
+            {
+                if (character.CharacterName.ToUpper() == userInputCharacterSearch.ToUpper())
+                {
+                    return character;
+                }
+            }
+
+            return null;
+        }
+
         // public List<Character> GetCharactersFromUserInput()
 
         public void SeedData()
@@ -65,7 +78,7 @@ namespace OverwatchCharacters.Repository
             Character[] characterArr = { dva, orisa, reinhardt, roadhog, sigma, 
             winston, wreckingBall, zarya, ashe, bastion, mccree, doomfist, echo,
             genji, hanzo, junkrat, mei, pharah, reaper, soldier76, sombra, symmetra, torbjorn, 
-            tracer, widowmaker, ana, baptiste, brigitte, lucio, mercy, moira, zenyatta, echo};
+            tracer, widowmaker, ana, baptiste, brigitte, lucio, mercy, moira, zenyatta};
 
             foreach (Character character in characterArr)
             {

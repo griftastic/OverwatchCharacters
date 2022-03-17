@@ -23,7 +23,7 @@ public enum Gender { Male, Female, Omnic }
             TypeOfPower = typeOfPower;
             DifficultyLevel = difficultyLevel;
             Gender = gender;
-            IsCool = IsCool;
+            IsCool = isCool;
         } 
 
     }
