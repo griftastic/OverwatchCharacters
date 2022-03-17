@@ -62,7 +62,15 @@ namespace OverwatchCharacters.Repository
             Character moira = new Character ("Moira", PowerType.Healer, 2, Gender.Female, true);
             Character zenyatta = new Character ("Zenyatta", PowerType.Healer, 3, Gender.Omnic, true);
             
+            Character[] characterArr = { dva, orisa, reinhardt, roadhog, sigma, 
+            winston, wreckingBall, zarya, ashe, bastion, mccree, doomfist, echo,
+            genji, hanzo, junkrat, mei, pharah, reaper, soldier76, sombra, symmetra, torbjorn, 
+            tracer, widowmaker, ana, baptiste, brigitte, lucio, mercy, moira, zenyatta, echo};
 
+            foreach (Character character in characterArr)
+            {
+                AddCharacterToList(character);
+            }
         }
     }
 }
