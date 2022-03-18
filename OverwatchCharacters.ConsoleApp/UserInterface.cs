@@ -39,7 +39,7 @@ namespace OverwatchCharacters.ConsoleApp
                 switch (input)
                 {
                     case "1":
-                    // CreateACharacter();
+                    CreateACharacter();
                     break;
                     case "2":
                     ViewAllCharacters();
@@ -48,13 +48,71 @@ namespace OverwatchCharacters.ConsoleApp
                     SearchCharacter();
                     break;
                     case "4":
-                    // ExitApplication();
+                    ExitApplication();
                     break;
                     default:
                     break;
                 }
             }
 
+            private void CreateACharacter()
+            {
+                _console.EnterAName();
+                string characterName = GetUserInput();
+                _console.PrintPowerType();
+                _console.EnterSelection();
+                string powerTypeInput = GetUserInput();
+                PowerType powerType = PowerType.Attack;
+
+                switch (powerTypeInput)
+                {
+                    case "1":
+                        powerType = PowerType.Attack;
+                        break;
+                    case "2":
+                        powerType = PowerType.Defense;
+                        break;
+                    case "3":
+                        powerType = PowerType.Tank;
+                        break;
+                    case "4":
+                        powerType = PowerType.Healer;
+                        break;
+                    default:
+                        break;
+                }
+
+                _console.PrintDifficultyLevel();
+                int difficultyLevel = Convert.ToInt32(GetUserInput());
+
+                _console.PrintGenders();
+                string genderInput = GetUserInput();
+                Gender gender = Gender.Female;
+
+                switch (genderInput)
+                {
+                    case "1":
+                        gender = Gender.Female;
+                        break;
+                    case "2":
+                        gender = Gender.Male;
+                        break;
+                    case "3":
+                        gender = Gender.Omnic;
+                        break;
+                    default:
+                        break;
+                }
+
+                _console.IsCool();
+
+                bool isCool = Convert.ToBoolean(GetUserInput());
+
+                Character newCharacter = new Character(characterName, powerType, difficultyLevel, gender, isCool);
+
+                _characterList.AddCharacterToList(newCharacter);
+                _console.PressAnyKeyToContinue();
+            }
             private void ViewAllCharacters()
             {
                 List<Character> _listOfCharacters = _characterList.GetAllCharacters();
@@ -75,6 +133,11 @@ namespace OverwatchCharacters.ConsoleApp
                     _console.PressAnyKeyToContinue();
             }
 
+            private void ExitApplication()
+            {
+                isRunning = false;
+                _console.ExitApplicationMessage();
+            }
             //New Method
 
             }
@@ -90,7 +153,7 @@ namespace OverwatchCharacters.ConsoleApp
 
                 public void PrintCharacter(Character character)
                 {
-                    Console.WriteLine($"\n{character.CharacterName.ToUpper()} \nGender: {character.Gender} \nPower Type: {character.TypeOfPower} \n Difficulty Level: {character.DifficultyLevel}\n" +
+                    Console.WriteLine($"\n{character.CharacterName.ToUpper()} \nGender: {character.Gender} \nPower Type: {character.TypeOfPower} \nDifficulty Level: {character.DifficultyLevel}\n" +
                     $"This character is cool: {character.IsCool}");
                 }
 
@@ -113,9 +176,14 @@ namespace OverwatchCharacters.ConsoleApp
                     "4. Healer");
                 }
 
+                public void PrintDifficultyLevel()
+                {
+                    Console.WriteLine("Insert Difficulty Level (1-3): ");
+                }
+
                 public void IsCool()
                 {
-                    Console.Write("Do you want the character to be cool? (Y/N): ");
+                    Console.Write("Is the character cool? (true or false): ");
                 }
 
                 public void PrintGenders()
